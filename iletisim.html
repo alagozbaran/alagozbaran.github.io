@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Baran Alagöz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles"></div>
+
+    <header class="top-bar">
+        <button id="menu-toggle" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="theme-toggle" class="icon-btn" title="Temayı Değiştir"><i class="fa-solid fa-moon"></i></button>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <button id="close-menu" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+            <a href="projeler.html" class="nav-link"><i class="fa-solid fa-rocket"></i> Projelerim</a>
+            <a href="iletisim.html" class="nav-link" style="color: var(--accent);"><i class="fa-solid fa-envelope"></i> İletişim</a>
+            <a href="cv.html" class="nav-link"><i class="fa-regular fa-file-lines"></i> CV / Özgeçmiş</a>
+            <button class="nav-link btn-back-intro"><i class="fa-solid fa-rotate-left"></i> Giriş Ekranına Dön</button>
+        </nav>
+    </div>
+    
+    <div id="overlay" class="overlay"></div>
+
+    <div id="main-screen" class="screen active" style="opacity: 1; transform: translateY(0); pointer-events: all;">
+        <div class="main-content">
+            <section class="page-section">
+                <h2 class="section-title">İletişim</h2>
+                <div class="contact-container">
+                    
+                    <!-- Gerçek Sosyal Medya Linklerin -->
+                    <div class="social-links">
+                        <a href="https://github.com/alagozbaran" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/baran-alagoz-undefined-78646243b" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://instagram.com/barngoz" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+
+                    <!-- Çalışan İletişim Formu Altyapısı (Formspree) -->
+                    <form action="https://formspree.io/f/meaovepd" method="POST" class="contact-form">
+                        <h3>Bana Mesaj Gönder</h3>
+                        <input type="text" name="isim" placeholder="Adınız" required>
+                        <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+                        <textarea name="mesaj" placeholder="Mesajınız..." rows="4" required></textarea>
+                        <button type="submit" class="btn primary-btn w-100">Gönder <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <p class="quote">"Ey yükselen yeni nesil! İstikbal sizsiniz. Cumhuriyeti biz kurduk, onu yükseltecek ve yaşatacak sizsiniz."</p>
+                <p class="quote-author">— Mustafa Kemal Atatürk</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

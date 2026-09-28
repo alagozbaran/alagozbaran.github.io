@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmiş | Baran Alagöz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles"></div>
+
+    <header class="top-bar">
+        <button id="menu-toggle" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+        <button id="theme-toggle" class="icon-btn" title="Temayı Değiştir"><i class="fa-solid fa-moon"></i></button>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <button id="close-menu" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Ana Sayfa</a>
+            <a href="projeler.html" class="nav-link"><i class="fa-solid fa-rocket"></i> Projelerim</a>
+            <a href="iletisim.html" class="nav-link"><i class="fa-solid fa-envelope"></i> İletişim</a>
+            <a href="cv.html" class="nav-link" style="color: var(--accent);"><i class="fa-regular fa-file-lines"></i> CV / Özgeçmiş</a>
+            <button class="nav-link btn-back-intro"><i class="fa-solid fa-rotate-left"></i> Giriş Ekranına Dön</button>
+        </nav>
+    </div>
+    
+    <div id="overlay" class="overlay"></div>
+
+    <div id="main-screen" class="screen active" style="opacity: 1; transform: translateY(0); pointer-events: all;">
+        <div class="main-content">
+            <div class="profile-header">
+                <h2>Özgeçmiş</h2>
+            </div>
+            
+            <!-- EĞİTİM -->
+            <div class="about-card" style="margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i> Eğitim
+                </h3>
+                <div style="margin-bottom: 20px; border-left: 3px solid var(--accent); padding-left: 15px;">
+                    <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Bulut Bilişim Operatörlüğü — 2. Sınıf <i>(Devam Ediyor)</i></p>
+                </div>
+                <div style="border-left: 3px solid var(--border-color); padding-left: 15px;">
+                    <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">Borsa İstanbul Mesleki ve Teknik Anadolu Lisesi</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Veri Tabanı ve Ağ Tasarımı — <i>(Mezun)</i></p>
+                </div>
+            </div>
+            
+            <!-- YETENEKLER -->
+            <div class="about-card" style="margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-code" style="color: var(--accent);"></i> Yetenekler & Teknolojiler
+                </h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 1rem;">
+                    <li><strong style="color: var(--accent);">Oyun Geliştirme & Tasarım:</strong> Godot Engine (İleri Seviye), 2D Piksel Grafikler, Animasyon, 3D Tasarım (Orta Seviye)</li>
+                    <li><strong style="color: var(--accent);">Yazılım Dilleri:</strong> Python, C++, C# (Temel/Gelişim Aşamasında)</li>
+                    <li><strong style="color: var(--accent);">Yapay Zeka:</strong> AI destekli iş süreçleri, tasarım ve grafik oluşturma araçlarında yüksek yetkinlik.</li>
+                    <li><strong style="color: var(--accent);">İlgi Alanları:</strong> Bulut Sistemleri (Cloud) ve Siber Güvenlik</li>
+                </ul>
+            </div>
+
+            <!-- DENEYİM -->
+            <div class="about-card" style="margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-briefcase" style="color: var(--accent);"></i> Deneyimler
+                </h3>
+                <div style="margin-bottom: 20px; border-left: 3px solid var(--accent); padding-left: 15px;">
+                    <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">Yüreğir Belediyesi</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Bilgi İşlem Departmanı <i>(Üniversite Stajı)</i></p>
+                </div>
+                <div style="border-left: 3px solid var(--border-color); padding-left: 15px;">
+                    <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">Dejavu Bilgisayar</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">IT & Donanım Destek <i>(Lise Stajı)</i></p>
+                </div>
+            </div>
+
+            <!-- SERTİFİKALAR & DİL (YENİ EKLENEN BÖLÜM) -->
+            <div class="about-card">
+                <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-certificate" style="color: var(--accent);"></i> Sertifikalar & Yabancı Dil
+                </h3>
+                <div style="margin-bottom: 20px; border-left: 3px solid var(--accent); padding-left: 15px;">
+                    <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">Üretken Yapay Zekâya Giriş <i>(Başarı Belgesi)</i></h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">BTK Akademi</p>
+                </div>
+                <div style="margin-bottom: 20px; border-left: 3px solid var(--border-color); padding-left: 15px;">
+                    <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">Windows 11 İşletim Sistemi <i>(Başarı Belgesi)</i></h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">BTK Akademi</p>
+                </div>
+                <div style="border-left: 3px solid var(--border-color); padding-left: 15px;">
+                    <h4 style="color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px;">İngilizce Dil Yeterliliği</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">A2 Seviyesi</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p class="quote">"Ey yükselen yeni nesil! İstikbal sizsiniz. Cumhuriyeti biz kurduk, onu yükseltecek ve yaşatacak sizsiniz."</p>
+                <p class="quote-author">— Mustafa Kemal Atatürk</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
